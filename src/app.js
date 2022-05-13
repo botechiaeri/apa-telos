@@ -1,5 +1,8 @@
 /***********settings****** */
 require('dotenv').config()
+
+const colors = require('colors')
+
 const express = require('express');
 const http = require('http')
 const PORT = 3021;
