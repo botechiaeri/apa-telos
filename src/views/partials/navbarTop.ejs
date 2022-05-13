@@ -1,0 +1,128 @@
+<style>
+.div1 {
+  grid-area: 1 / 1 / 2 / 6;
+  height: 90px;
+}
+
+.div2 {
+  grid-area: 2 / 1 / 12 / 6;
+  height: auto;
+  background: black;
+}
+
+.div1 {
+  background: url("../images/svg/bg-01.svg");
+  background-repeat: repeat;
+}
+
+.div3 {
+  grid-area: 12 / 1 / 13 / 6;
+  max-height: 20px;
+}
+.menu {
+  margin-top: 0px;
+  height: 80px;
+  border: 2px solid  #ff4d6f;
+  border-radius: 0 0 15px 15px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(48, 1, 25, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  -webkit-border-radius: 0 0 15px 15px;
+  -moz-border-radius: 0 0 15px 15px;
+  -ms-border-radius: 0 0 15px 15px;
+  -o-border-radius: 0 0 15px 15px;
+  margin-bottom: 40px;
+  background-color:  #ff4d6f;
+  padding-right: 4rem;
+}
+
+.dropdown-menu {
+  border: 0px;
+  padding: 0.5em;
+  margin: auto;
+  width: 50% auto;
+}
+
+.dropdown-divider {
+  color: #e70c8f;
+  width: 100%;
+}
+
+.apaBrand {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+  font-size: 2.7rem;
+  color:  #ff4d6f;
+}
+
+.apaLink {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.7rem;
+  color: #ff4d6f;
+}
+
+.nLink {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: #060004;
+}
+
+.nlink a:link {
+  color: black;
+}
+
+.nlink a:hover {
+  color: rgb(252, 167, 252);
+}
+
+.menu-expand {
+  text-align: margin-top: 1em;
+  padding-bottom: 1rem;
+  margin: 0px solid #E70C8F;
+  border-radius: 15px;
+}
+
+.menu-expand li:hover {
+  background: #ff4d6f;);
+}
+
+</style>
+
+
+<div class="div1">
+    <nav class="navbar navbar-light bg-light fixed-top menu">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/"></a><span class="apaBrand">APA</span>
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
+                <ul class="navbar-nav bg-light me-auto mb-5 mb-lg-0 menu-expand">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/products"><span class="nLink">CABA</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/products"><span class="nLink">BUSCAR</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle show" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true" style="color: ">
+                            <span class="nLink">CLUB</span>
+                        </a>
+                        <ul class="dropdown-menu show" aria-labelledby="navbarScrollingDropdown" data-bs-popper="none">
+                            <li><a class="dropdown-item" href="/usuarios"><span class="nLink">LOGIN </span></a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="/usuarios/cadastro"><span class="nLink">NUEVOS SOCIOS</span></a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="/enterprises"><span class="nLink">EMPRESAS</span></a></li>
+                            <li><a class="dropdown-item" href="/enterprises/register"><span class="nLink">CADASTRE su EMPRESA</span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+    </nav>
+</div>
+<div class="div2">

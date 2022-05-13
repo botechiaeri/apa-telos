@@ -1,0 +1,55 @@
+[
+ {
+  "comunaID": 1,
+  "nameL": "Nombre Telo",
+  "idL": 1,
+  "aL": "Direccion Local",
+  "parkingL": "Playa Privada Direccion",
+  "telL": "numero telefono o  wpp",
+  "socialMidiaL": "instagram",
+  "wL": "web  site",
+  "dL": "descripcion del Local",
+  "sL": {
+   "clima_hot": false,
+   "clima_cold": false,
+   "music_player": false,
+   "room_service": false,
+   "sex_shop": false,
+   "porn_channels": false,
+   "thresome_accepts": false,
+   "gay_friendly": false,
+   "thematic": false
+  }
+ },
+ {
+  "comunaID": "1",
+  "nameL": "2",
+  "idL": 2,
+  "aL": "d",
+  "parkingL": "d",
+  "telL": "d",
+  "socialMidiaL": "2",
+  "wL": "2",
+  "dL": "2",
+  "sL": {
+   "clima_hot": "true",
+   "clima_cold": "true"
+  },
+  "tyP": {
+   "tyP_a": "2",
+   "tyP_b": "2",
+   "tyP_c": "2",
+   "tyP_d": "2"
+  },
+  "minPrice": "",
+  "maxPrice": "3ER",
+  "roomsL": {
+   "rooms_1FK": "2",
+   "rooms_2FK": "",
+   "rooms_3FK": "",
+   "rooms_4FK": "",
+   "rooms_5FK": "",
+   "rooms_6FK": ""
+  }
+ }
+]

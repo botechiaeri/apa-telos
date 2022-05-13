@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="APA AFTER-NIGHT" content="BUSCADOR DE TELOS, TELOS SEARCH ENGINE, TELOS ARGENTINA, ARGENTINA, CABA, TELOS-CABA">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%-include (../partials/head'); %>
+    <link rel="stylesheet" href="stylesheets/style.css" type="text/css" />
+ <link rel="stylesheet" href="stylesheets/style_cadastroUsuarioEmpresa.css" type="text/css"/>
+
+<%= title %>
+
+
+</head>
+
+<body class="bodyPage">
+    <%-include ('../partials/navbarTop');%>
+
+      
+            <div class="container-fluid" style="background: #0c0c0c;">
+                <div class="row">
+                    <div class="col-12 col-md-6 bg-side" style="background: #0c0c0c; background-image:url('/images/svg/icoon10.svg') ; background-size: cover;">
+
+                    </div>
+                    <div class="col-12 col-md-6 bg-form mt-5"style="background: #0c0c0c; ">
+                        <!-- final navbar---------------------- -->
+                        <form class="form-group" action="/empresas/cadastro" method="POST">
+
+                            <div class="elem-grupo">
+                                <label for="nameE">Nombre de la Empresa:</label>
+                                <input type="text" name="nameE" class="placeholder_Custom" placeholder="Nombre LOCAL" required>
+                            </div>
+                            <div class="elem-grupo">
+                                <label for="emailE"></label>E-mail Contacto :</label>
+                                <input type="text" name="emailE" class="placeholder_Custom" placeholder="nombre@mail.com" required>
+                            </div>
+                            <div class="elem-grupo">
+                                <label for="webE"></label>Pagina Web :</label>
+                                <input type="text" name="webE" class="placeholder_Custom" placeholder="WEB-SITE de la EMPRESA">
+                            </div>
+                            <div class="elem-grupo text-center ">
+                                <label for="checkE">OBJETIVO:</label>
+                                <div class="col-12">
+                                    <input type="checkbox" name="checkE" value="publicity">
+                                    <label for="publicity">PUBLICIDAD</label>
+                                    <input type="checkbox" name="checkE" value="Facility">
+                                    <label for="facility">FACILIDAD </label>
+                                    <input type="checkbox" name="checkE" value="visibility">
+                                    <label for="visibillity">VISIBILIDAD WEB</label>
+                                    <input type="checkbox" name="checkE" value="automatization">
+                                    <label for="automatization">AUTOMATIZACIÓN</label>
+                                </div>
+                            </div>
+                            <div class="elem-grupo">
+                                <label for="notesE">Anexar Observaciones de Notas e Imagens se necesario</label>
+                                <textarea name="notesE" rows="3" cols="1" style="background-color: #D7E8EF; "></textarea>
+                            </div>
+
+                            <button class="submit " type="submit ">ENVIAR  <i class="bi bi-send "></i></button>
+                            <button class="reset " type="reset " type="reset ">BORRAR <i class="bi bi-x-square-fill "></i></button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        </div>
+
+        <%-include ('../partials/navbarBottom'); %>
+</body>
+
+</html>

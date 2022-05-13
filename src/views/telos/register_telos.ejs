@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <%-include ('../partials/head'); %>
+      
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css"/>
+    <title><%=title%></title>
+    </head>
+<body class="bodyPage">
+  <%-include('../partials/navbarTop'); %>
+
+   <div class="container">
+     <div class="row">
+       <div class="col">
+    
+    <main class="col-12 text-light">
+        <form method="POST" action="/telos/create">
+          <div class="form-group">
+
+            <label for="comunaID ">Numero de la Comuna</label>
+            <select id="comunaID" name="comunaID" required>
+              <option name="comunaID" value="1">Comuna 1</option>
+              <option name="comunaID" value="2">Comuna 2</option>
+              <option name="comunaID" value="3">Comuna 3</option>
+              <option name="comunaID" value="4">Comuna 4</option>
+              <option name="comunaID" value="5">Comuna 5</option>
+              <option name="comunaID" value="6">Comuna 6</option>
+              <option name="comunaID" value="7">Comuna 7</option>
+              <option name="comunaID" value="8">Comuna 8</option>
+              <option name="comunaID" value="9">Comuna 9</option>
+              <option name="comunaID" value="10">Comuna 10</option>
+              <option name="comunaID" value="11">Comuna 11</option>
+              <option name="comunaID" value="12">Comuna 12</option>
+              <option name="comunaID" value="13">Comuna 13</option>
+              <option name="comunaID" value="14">Comuna 14</option>
+              <option name="comunaID" value="15">Comuna 15</option>
+          
+            </select> 
+            </div>
+          <div class="form-group">
+            <label for="nameL"> NOMBRE TELOS</label> 
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">Nombre del Telo</div>
+              </div> 
+              <input id="nameL" name="nameL" placeholder="Ej: 'Telo APA'" type="text" required="required" class="form-control"> 
+              <div class="input-group-append">
+                <div class="input-group-text">
+                  <i class="fa fa-vcard"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="aL"></label> 
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">Direccion Principal</div>
+              </div> 
+              <input id="aL" name="aL" placeholder="Ej: 'Nombre Calle , 123, barrio , CABA' " type="text" required="required" class="form-control"> 
+              <div class="input-group-append">
+                <div class="input-group-text">
+                  <i class="fa fa-location-arrow"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="parkingL"></label> 
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">Playa Privada</div>
+              </div> 
+              <input id="parkingL" name="parkingL" placeholder="Ej: 'Direccion PLAYA PRIVADA, PARKING o ESTACIONAMIENTO'" type="text" class="form-control"> 
+              <div class="input-group-append">
+                <div class="input-group-text">
+                  <i class="fa fa-taxi"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="telL"></label> 
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">Telefone Contacto</div>
+              </div> 
+              <input id="telL" name="telL" placeholder="+54 11 2345 5902" type="text" class="form-control"> 
+              <div class="input-group-append">
+                <div class="input-group-text">
+                  <i class="fa fa-volume-control-phone"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="wL"></label> 
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">Web Pagina</div>
+              </div> 
+              <input id="wL" name="wL" placeholder="Ej www.apa-baires.com.ar" type="text" class="form-control"> 
+              <div class="input-group-append">
+                <div class="input-group-text">
+                  <i class="fa fa-wikipedia-w"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="socialMidiaL"></label> 
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">Instagram o Otras Redes</div>
+              </div> 
+              <input id="socialMidiaL" name="socialMidiaL" placeholder="@APA_baires" type="text" class="form-control"> 
+              <div class="input-group-append">
+                <div class="input-group-text">
+                  <i class="fa fa-comments"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="dL"></label> 
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">Breve Descripcion</div>
+              </div> 
+              <input id="dL" name="dL" placeholder="Ej: Hacer con que cliente pase buenos Momentos con Tematic" type="text" aria-describedby="dLHelpBlock" required="required" class="form-control"> 
+              <div class="input-group-append">
+                <div class="input-group-text">
+                  <i class="fa fa-keyboard-o"></i>
+                </div>
+              </div>
+            </div> 
+            <span id="dLHelpBlock" class="form-text text-warning">Descripcion de hasta 140 characteres</span>
+          </div>
+          <div class="form-group">
+           
+            <div class="elem-grupo text-center ">
+              <label for="sL">SERVICIOS GENERALES:</label>
+              <div class="col-12">
+                  <input type="checkbox" name="sL" id="clima_hot" value="true">
+                  <label for="#clima_hot">AIRE CALIENTE</label>
+                  <input type="checkbox" name="sL" id="clima_cold" value="true">
+                  <label for="#clima_cold">AIRE FRIO</label>
+                  <input type="checkbox" name="sL" id="music_player" value="true">
+                  <label for="#music_player">MUSICA AMBIENTE</label>
+                  <input type="checkbox" name="sL" id="room_service" value="true">
+                  <label for="#room_service">ROOM SERVICE</label>
+                  <input type="checkbox" name="sL" id="sex_shop" value="true">
+                  <label for="#sex_shop">SEX SHOP</label>
+                  <input type="checkbox" name="sL" id="porn_channels" value="true">
+                  <label for="#porn_channels">VIDEOS PORNO</label>
+                  <input type="checkbox" name="sL" id="thresome_accepts" value="true">
+                  <label for="#thresome_accepts">ACEPTA TRIOS o +</label>
+                  <input type="checkbox" name="sL" id="gay_friendly" value="true">
+                  <label for="#gay_friendly"> GAY FRIENDLY </label>
+                  <input type="checkbox" name="sL" id="thematic" value="true">
+                  <label for="#thematic"> SUITES TEMATICAS </label>
+              </div>
+          </div>
+
+          <div class="form-group">
+            <label for="tyP_a">turno  A : valor + ECONOMICO</label> 
+            <input id="tyP_a" name="tyP_a" placeholder=""Lunes a Jueves (excepto feriados) - 6 a 23 hs  - turno 3 horas "" type="text" aria-describedby="tyP_aHelpBlock" class="form-control"> 
+            <span id="tyP_aHelpBlock" class="form-text text-muted">( Dias Validos - Horarios Validos - Duracion del Turno)</span>
+          </div>
+          <div class="form-group">
+            <label for="tyP_b">turno B : SEGUNDO valor + ECONOMICO</label> 
+            <input id="tyP_b" name="tyP_b" placeholder=""Lunes a Jueves (excepto feriados) - 23 - 6hs - turno 3horas" " type="text" aria-describedby="tyP_bHelpBlock" class="form-control"> 
+            <span id="tyP_bHelpBlock" class="form-text text-muted">( Dias Validos - Horarios Validos - Duracion del Turno)</span>
+          </div>
+          <div class="form-group">
+            <label for="tyP_c">turno C : SEGUNDO valor + ECONOMICO</label> 
+            <input id="tyP_c" name="tyP_c" placeholder=""Viernes a Domingo y Feriado - 6hs - 23hs - turno de 3horas"" type="text" aria-describedby="tyP_cHelpBlock" class="form-control"> 
+            <span id="tyP_cHelpBlock" class="form-text text-muted">( Dias Validos - Horarios Validos - Duracion del Turno )</span>
+          </div>
+          <div class="form-group">
+            <label for="tyP_d">turno D : Valor + ALTO</label> 
+            <input id="tyP_d" name="tyP_d" placeholder=""Viernes a Domingo y Feriado - 23hs - 6hs - Periodo de 2horas"" type="text" aria-describedby="tyP_dHelpBlock" class="form-control"> 
+            <span id="tyP_dHelpBlock" class="form-text text-muted">( Dias Validos - Horarios Validos - Duracion del Turno)</span>
+          </div>
+          <div class="form-group">
+            <label for="maxPrice">Precio MAXIMO que cliente puede llegar a pagar?</label> 
+            <class class="input-group">
+              <input id="maxPrice" name="maxPrice" placeholder="Valor + ALTO en Turno o Pernocte + CARO" type="text" required="required" class="form-control"> 
+              <div class="input-group-append">
+                <div class="input-group-text">
+                  <i class="fa fa-money"></i>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+          
+            <label for="minPrice">Precio MAXIMO que cliente puede llegar a pagar?</label> 
+            <div class="input-group">
+              <input id="minPrice" name="minPrice" placeholder="Valor + ECONOMICO en Turno o Pernocte + ECONOMICO" type="text" class="form-control"> 
+              <div class="input-group-append">
+                <div class="input-group-text">
+                  <i class="fa fa-money"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="rooms_1FK"></label> 
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">Nombre Habitacion #01</div>
+              </div> 
+              <input id="rooms_1FK" name="rooms_1FK" placeholder=" Habitacion #01" type="text" class="form-control"> 
+              <div class="input-group-append">
+                <div class="input-group-text">
+                  <i class="fa fa-list-ol"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="rooms_2FK"></label> 
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">Nombre Habitacion #02</div>
+              </div> 
+              <input id="rooms_2FK" name="rooms_2FK" placeholder=" Habitacion #02" type="text" class="form-control"> 
+              <div class="input-group-append">
+                <div class="input-group-text">
+                  <i class="fa fa-list-ol"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="rooms_3FK"></label> 
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">Nombre Habitacion #03</div>
+              </div> 
+              <input id="rooms_3FK" name="rooms_3FK" placeholder=" Habitacion #03" type="text" class="form-control"> 
+              <div class="input-group-append">
+                <div class="input-group-text">
+                  <i class="fa fa-list-ol"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="rooms_4FK"></label> 
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">Nombre Habitacion #04</div>
+              </div> 
+              <input id="rooms_4FK" name="rooms_4FK" placeholder=" Habitacion #04" type="text" class="form-control"> 
+              <div class="input-group-append">
+                <div class="input-group-text">
+                  <i class="fa fa-list-ol"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="rooms_5FK"></label> 
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">Nombre Habitacion #05</div>
+              </div> 
+              <input id="rooms_5FK" name="rooms_5FK" placeholder=" Habitacion #05" type="text" class="form-control"> 
+              <div class="input-group-append">
+                <div class="input-group-text">
+                  <i class="fa fa-list-ol"></i>
+                </div>
+           </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="rooms_6FK"></label> 
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">Nombre Habitacion #06</div>
+              </div> 
+              <input id="rooms_6FK" name="rooms_6FK" placeholder=" Habitacion #06" type="text" class="form-control"> 
+              <div class="input-group-append">
+                <div class="input-group-text">
+                  <i class="fa fa-list-ol"></i>
+                </div>
+           </div>
+          </div>
+          <div class="form-group">
+            <label for="rooms_7FK"></label> 
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">Nombre Habitacion #07</div>
+              </div> 
+              <input id="rooms_7FK" name="rooms_5FK" placeholder=" Habitacion #07" type="text" class="form-control"> 
+              <div class="input-group-append">
+                <div class="input-group-text">
+                  <i class="fa fa-list-ol"></i>
+                </div>
+           </div>
+          </div>
+          <div class="text-area">
+            <label for="notesL">Aclaraciones y Notas sobre Telo</label> 
+            <textarea id="notesL" name="notesL" cols="40" rows="5" class="form-control"></textarea>
+          </div> 
+         
+          <div class="form-group">
+            <button name="submit" type="submit" class="btn btn-success">ENVIAR NUEVO LOCAL</button>
+            <button name="delete" type="delete" class="btn btn-danger">BORRAR DATOS</button>
+          </div>
+        </form>
+
+</main>
+     </div>
+     </div>
+<%-include ('../partials/footer')%>
+        
+        <%- include('../partials/navbarBottom'); %>
+   </body>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+   </html>
+</html>

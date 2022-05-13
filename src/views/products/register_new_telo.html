@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Title</title>
+</head>
+<body>
+ 
+<div class="container container-products">
+	<div class="row">
+		<div class="col-12">
+			<h2 class="h2-rooms">
+					Form Habitaciones
+					</h2>
+		</div>
+	</div>
+	<div class="col-12">
+		<form action="telos/rooms/register" method="POST" enctype="multipart/form-data">
+			<div class="form-group row" id="rooms_overview">
+				<div class="row">
+				<div class="col-5" for="idTFK">
+				<label for="rooms_name" class="form-label">ID(idT):</label>
+				<input type="text" id="rooms_name" name="rooms_name" input="Ejemplo: 01" class="form-input col-4">
+					
+				<div class="col-8">
+					<label for="rooms_name" class="form-label">Nombre Telo</label>
+					<input type="text" id="rooms_name" name="rooms_name" placeholder="habitacion SPA" class="form-input">
+				</div>
+</div>
+			</div>
+				<div class="form-group row" id="shift_1">
+					<legend>Turno #01</LEGEND>
+				<div class="col-12">
+					<label for="days_shift_1" class="form-label col-2">Dias :</label>
+					<input type="text" id="days_shift_1" name="days_shift_1" placeholder="Lunes a Viernes" class="form-input col-8">
+				</div>
+				<div class="col-6">
+					<label for="startEnd_shift_1" class="form-label">Horarios Validos:</label><br/>
+					<input type="text" id="startEnd_shift_1" name="startEnd_shift_1" placeholder="Entre 6 am hasta 18 pm">
+				</div>
+				<div class="col-4">
+					<label for="period_shift_1" 
+					class="form-label"> Duracion 
+						</label><br/>
+					<input type="text" id="period_shift_1" name=period_shift_1" placeholder="2 horas" class="form-input">
+				</div>
+				<fieldset class="col-12">
+					<legend>Precios </legend>
+					<div class="col-12">
+					<label for="shift-1_rooms_price" 
+					class="form-label">Precio para Turno #01  
+						</label>
+					<input type="text" id="shift_01" name="shift_01" placeholder="Horarios, Dias y Duracion" class="form-input">
+				</div>
+				<div class="col-12 col-md-6">
+					<label for="priceRL" class="form-label">Precios para Turno #01:</label>
+					<input type="text" id="price" name="price" placeholder="2300-3100" class="form-input">
+				</div>
+				<div class="col-12 col-md-6">
+					<label for="priceCategory" class="form-label">Categoria del Precio:</label>
+					<input type="text" id="discount" name="discount" placeholder="Ej: 15" class="form-input">
+				</div>
+				<div class="col-12 col-md-6">
+					<label for="category" class="form-label">Categoría:</label>
+					<select name="category" id="category" class="form-input">
+						<option value="">Elegí</option>
+						<option value="in-sale">En oferta</option>
+						<option value="visited">Últimos agregados</option>
+					</select>
+				</div>
+				<div class="col-12">
+					<label for="description" class="form-label">Descipción:</label>
+					<textarea name="description" id="description" class="form-input"></textarea>
+				</div>
+				<div class="col-12">
+					<button type="submit" class="buy-now-button">Guardar producto</button>
+				</div>
+			</div>
+		</form>
+</div>
+<%-include
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>
